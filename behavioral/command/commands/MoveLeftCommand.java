@@ -13,8 +13,8 @@ public class MoveLeftCommand extends Command {
     @Override
     public void execute() {
         backup();
-        Point currentLocation = this.editor.getLabelLocation();
-        this.editor.setLabelLocation(new Point(currentLocation.x - 5, currentLocation.y));
+        Point currentLocation = editor.getLabelLocation();
+        editor.setLabelLocation(new Point(currentLocation.x - 5, currentLocation.y));
     }
 
 }

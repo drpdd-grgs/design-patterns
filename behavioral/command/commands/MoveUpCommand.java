@@ -13,8 +13,8 @@ public class MoveUpCommand extends Command {
     @Override
     public void execute() {
         backup();
-        Point currentLocation = this.editor.getLabelLocation();
-        this.editor.setLabelLocation(new Point(currentLocation.x, currentLocation.y - 5));
+        Point currentLocation = editor.getLabelLocation();
+        editor.setLabelLocation(new Point(currentLocation.x, currentLocation.y - 5));
     }
 
 }

@@ -14,11 +14,11 @@ public abstract class Command {
     }
 
     public void backup() {
-        this.backup = this.editor.getLabelLocation();
+        backup = editor.getLabelLocation();
     }
 
     public void undo() {
-        this.editor.setLabelLocation(backup);
+        editor.setLabelLocation(backup);
     }
 
     public abstract void execute();

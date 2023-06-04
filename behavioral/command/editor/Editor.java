@@ -11,7 +11,7 @@ public class Editor {
     private final CommandHistory history;
 
     public Editor() {
-        this.history = new CommandHistory();
+        history = new CommandHistory();
     }
 
     public void init() {
@@ -37,8 +37,8 @@ public class Editor {
         undo.addActionListener(e -> undo());
 
         JPanel field = new JPanel(new GridBagLayout());
-        this.label = new JLabel("MOVE ME");
-        this.label.setLocation(250, 250);
+        label = new JLabel("MOVE ME");
+        label.setLocation(250, 250);
         field.add(label);
 
         buttons.add(moveLeft);
@@ -56,11 +56,11 @@ public class Editor {
     }
 
     public Point getLabelLocation() {
-        return this.label.getLocation();
+        return label.getLocation();
     }
 
     public void setLabelLocation(Point p) {
-        this.label.setLocation(p);
+        label.setLocation(p);
     }
 
     private void executeCommand(Command command) {

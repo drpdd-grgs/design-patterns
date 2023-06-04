@@ -11,49 +11,49 @@ public class RegistrationFormErrors {
     private final List<String> emailErrors;
 
     public RegistrationFormErrors() {
-        this.loginErrors = new ArrayList<>();
-        this.passwordErrors = new ArrayList<>();
-        this.passwordConfirmErrors = new ArrayList<>();
-        this.emailErrors = new ArrayList<>();
+        loginErrors = new ArrayList<>();
+        passwordErrors = new ArrayList<>();
+        passwordConfirmErrors = new ArrayList<>();
+        emailErrors = new ArrayList<>();
     }
 
     public boolean isOk() {
-        return this.loginErrors.isEmpty()
-                && this.passwordErrors.isEmpty()
-                && this.passwordConfirmErrors.isEmpty()
-                && this.emailErrors.isEmpty();
+        return loginErrors.isEmpty()
+                && passwordErrors.isEmpty()
+                && passwordConfirmErrors.isEmpty()
+                && emailErrors.isEmpty();
     }
 
     public List<String> getLoginErrors() {
-        return this.loginErrors;
+        return loginErrors;
     }
 
     public List<String> getPasswordErrors() {
-        return this.passwordErrors;
+        return passwordErrors;
     }
 
     public List<String> getPasswordConfirmErrors() {
-        return this.passwordConfirmErrors;
+        return passwordConfirmErrors;
     }
 
     public List<String> getEmailErrors() {
-        return this.emailErrors;
+        return emailErrors;
     }
 
     public void addToLoginErrors(String error) {
-        this.loginErrors.add(error);
+        loginErrors.add(error);
     }
 
     public void addToPasswordErrors(String error) {
-        this.passwordErrors.add(error);
+        passwordErrors.add(error);
     }
 
     public void addToPasswordConfirmErrors(String error) {
-        this.passwordConfirmErrors.add(error);
+        passwordConfirmErrors.add(error);
     }
 
     public void addToEmailErrors(String error) {
-        this.emailErrors.add(error);
+        emailErrors.add(error);
     }
 
 

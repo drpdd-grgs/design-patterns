@@ -16,19 +16,19 @@ public class RegistrationForm {
     }
 
     public String getLogin() {
-        return this.login;
+        return login;
     }
 
     public String getPassword() {
-        return this.password;
+        return password;
     }
 
     public String getPasswordConfirm() {
-        return this.passwordConfirm;
+        return passwordConfirm;
     }
 
     public String getEmail() {
-        return this.email;
+        return email;
     }
 
     public static class Builder {
@@ -36,30 +36,30 @@ public class RegistrationForm {
         private final RegistrationForm registrationForm;
 
         private Builder() {
-            this.registrationForm = new RegistrationForm();
+            registrationForm = new RegistrationForm();
         }
 
         public RegistrationForm build() {
-            return this.registrationForm;
+            return registrationForm;
         }
 
         public Builder login(String login) {
-            this.registrationForm.login = login;
+            registrationForm.login = login;
             return this;
         }
 
         public Builder password(String password) {
-            this.registrationForm.password = password;
+            registrationForm.password = password;
             return this;
         }
 
         public Builder passwordConfirm(String passwordConfirm) {
-            this.registrationForm.passwordConfirm = passwordConfirm;
+            registrationForm.passwordConfirm = passwordConfirm;
             return this;
         }
 
         public Builder email(String email) {
-            this.registrationForm.email = email;
+            registrationForm.email = email;
             return this;
         }
 
