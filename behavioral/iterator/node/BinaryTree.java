@@ -19,8 +19,8 @@ public class BinaryTree {
         return tree;
     }
 
-    public Iterator iterator() {
-        return new Iterator(root);
+    public Iterator inOrderIterator() {
+        return new InOrderIterator(root);
     }
 
     public void add(int value) {
@@ -93,11 +93,11 @@ public class BinaryTree {
         return node.getLeft() == null ? node.getValue() : findSmallestValue(node.getLeft());
     }
 
-    public static class Iterator {
+    public static class InOrderIterator implements Iterator<Node> {
 
         private final Stack<Node> traversal;
 
-        private Iterator(Node root) {
+        private InOrderIterator(Node root) {
             traversal = new Stack<>();
             moveLeft(root);
         }
@@ -109,10 +109,12 @@ public class BinaryTree {
             }
         }
 
+        @Override
         public boolean hasNext() {
             return !traversal.isEmpty();
         }
 
+        @Override
         public Node next() {
             if (!hasNext()) {
                 throw new NoSuchElementException();
