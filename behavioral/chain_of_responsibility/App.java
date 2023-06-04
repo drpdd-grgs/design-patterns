@@ -6,11 +6,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.List;
 
-
 public class App {
 
     public static void main(String[] args) {
-
         JFrame frame = new JFrame();
         frame.setTitle("Chain of Responsibility");
 
@@ -42,24 +40,25 @@ public class App {
         panel.add(loginLabel, constraints);
         constraints.gridx = 1;
         panel.add(loginInput, constraints);
+
         constraints.gridx = 0;
         constraints.gridy = 1;
-
         panel.add(passwordLabel, constraints);
         constraints.gridx = 1;
         panel.add(passwordInput, constraints);
+
         constraints.gridx = 0;
         constraints.gridy = 2;
-
         panel.add(passwordConfirmLabel, constraints);
         constraints.gridx = 1;
         panel.add(passwordConfirmInput, constraints);
+
         constraints.gridx = 0;
         constraints.gridy = 3;
-
         panel.add(emailLabel, constraints);
         constraints.gridx = 1;
         panel.add(emailInput, constraints);
+
         constraints.gridx = 0;
         constraints.gridy = 4;
         constraints.gridwidth = 2;
