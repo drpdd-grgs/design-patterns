@@ -62,7 +62,7 @@ public class Editor implements Mediator {
         User sender = userTitle.getUser();
         String message = messageInput.getMessage();
         if (sender != null && message != null && message.length() > 0) {
-            messageBox.getMessage(sender, message);
+            messageBox.newMessage(sender, message);
         }
     }
 

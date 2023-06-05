@@ -10,7 +10,7 @@ public class MessageBox extends JTextArea implements Component {
 
     private Mediator mediator;
 
-    public void getMessage(User sender, String message) {
+    public void newMessage(User sender, String message) {
         this.append(sender.getName() + " [" + LocalDateTime.now() + "]: " + message + "\n");
     }
 
